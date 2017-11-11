@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF5BD363"
         android:text="@string/initialButton"
+        android:onClick="initApp"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

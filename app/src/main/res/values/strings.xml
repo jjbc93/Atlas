@@ -12,4 +12,5 @@
     <string name="creditsValueApp">Atlas</string>
     <string name="creditsViewGit">Github</string>
     <string name="creditsValueGit">https://github.com/jjbc93</string>
+    <string name="listContinentTitle">Continentes</string>
 </resources>

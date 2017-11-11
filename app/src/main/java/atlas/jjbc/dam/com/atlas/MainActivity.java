@@ -17,4 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CreditActivity.class);
         startActivity(intent);
     }
+
+    public void initApp(View view){
+        Intent intent = new Intent(this, ListContinent.class);
+        startActivity(intent);
+    }
 }

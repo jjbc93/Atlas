@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".CreditActivity"></activity>
+        <activity android:name=".CreditActivity" />
+        <activity android:name=".ListContinent" />
+        <activity android:name=".Continent"></activity>
     </application>
 
 </manifest>
