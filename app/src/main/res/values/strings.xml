@@ -3,4 +3,13 @@
     <string name="initialButton">Comenzar</string>
     <string name="credistBtn">Créditos</string>
     <string name="infoBtn">Info</string>
+    <string name="creditsTitle">Atlas Créditos</string>
+    <string name="creditViewName">Autor</string>
+    <string name="creditValueName">Juanjo Bernabé Casas</string>
+    <string name="creditsViewEmail">Correo</string>
+    <string name="creditsValueEmail">juanjobernabe93@gmail.com</string>
+    <string name="creditsViewApp">App</string>
+    <string name="creditsValueApp">Atlas</string>
+    <string name="creditsViewGit">Github</string>
+    <string name="creditsValueGit">https://github.com/jjbc93</string>
 </resources>
