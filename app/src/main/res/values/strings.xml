@@ -13,4 +13,5 @@
     <string name="creditsViewGit">Github</string>
     <string name="creditsValueGit">https://github.com/jjbc93</string>
     <string name="listContinentTitle">Continentes</string>
+    <string name="viewCountries">Ver paises</string>
 </resources>
