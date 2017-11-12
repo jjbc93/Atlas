@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".CreditActivity" />
         <activity android:name=".ListContinent" />
-        <activity android:name=".Continent"></activity>
+        <activity android:name=".Continent" />
+        <activity android:name=".ListCountries"></activity>
     </application>
 
 </manifest>

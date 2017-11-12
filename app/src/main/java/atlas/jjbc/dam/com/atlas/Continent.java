@@ -10,14 +10,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Continent extends AppCompatActivity {
-    TextView textView;
     CheckBox countryA, countryB, countryC;
     String continent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_continent);
-        textView = (TextView) findViewById(R.id.continenttName);
+        TextView textView = (TextView) findViewById(R.id.continentName);
         countryA = (CheckBox) findViewById(R.id.checkBox);
         countryB = (CheckBox) findViewById(R.id.checkBox2);
         countryC = (CheckBox) findViewById(R.id.checkBox3);
@@ -32,7 +31,7 @@ public class Continent extends AppCompatActivity {
     }
 
     public void generateContinent(String nameContinent){
-        textView = (TextView) findViewById(R.id.continentDescription);
+        TextView textView = (TextView) findViewById(R.id.continentDescription);
         ImageView imageView = (ImageView) findViewById(R.id.continentImage);
         String description = "";
         String imgUrl;
@@ -92,10 +91,14 @@ public class Continent extends AppCompatActivity {
         if(!countryA.isChecked() && !countryB.isChecked() && !countryC.isChecked()){
             Toast.makeText(this, "No se ha seleccionado ningún país", Toast.LENGTH_SHORT).show();
         }else{
-            buffer.append("PaísA: ").append(countryA.isChecked());
+           /* buffer.append("PaísA: ").append(countryA.isChecked());
             buffer.append("PaísB: ").append(countryB.isChecked());
-            buffer.append("PaísC: ").append(countryC.isChecked());
-            Toast.makeText(this, buffer.toString(), Toast.LENGTH_SHORT).show();
+            buffer.append("PaísC: ").append(countryC.isChecked());*/
+            Intent intent = new Intent(getApplicationContext(), ListCountries.class);
+            intent.putExtra("continent", continent);
+            boolean [] seleccionados = {countryA.isChecked(), countryB.isChecked(), countryC.isChecked()};
+            intent.putExtra("seleccionados", seleccionados);
+            startActivity(intent);
         }
 
     }

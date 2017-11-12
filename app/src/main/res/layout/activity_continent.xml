@@ -7,7 +7,7 @@
     tools:context="atlas.jjbc.dam.com.atlas.Continent">
 
     <TextView
-        android:id="@+id/continenttName"
+        android:id="@+id/continentName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -44,7 +44,7 @@
         android:layout_marginTop="24dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/continenttName"
+        app:layout_constraintTop_toBottomOf="@+id/continentName"
         app:srcCompat="@drawable/globo_mundo" />
 
     <CheckBox
